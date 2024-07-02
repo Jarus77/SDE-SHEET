@@ -1,4 +1,17 @@
+
+
+
 // https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
+
+
+// detect a cycle in undirected graph.
+// Concept :
+// If you have visited a node that is already visited and that node is not the parent node, it means other node at the same level has visited that node, indicates a cycle.
+
+// DS used
+// queue<pair<node,parent>>
+// vector<bool> visited
+
 
 //{ Driver Code Starts
 #include <bits/stdc++.h>
