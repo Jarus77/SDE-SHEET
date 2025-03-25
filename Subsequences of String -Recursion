@@ -1,0 +1,40 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def subsequences(str):
+
+    # Write your code here
+
+
+    result=[]
+    n=len(str)
+
+    def generate_subsequence(s,index,current):
+
+        if index==n:
+
+            if current:
+                result.append(current)
+            return
+        
+        generate_subsequence(s,index+1,current)
+        current=current+s[index]
+        generate_subsequence(s,index+1,current)
+        
+
+
+    
+
+    generate_subsequence(str,0,"")
+
+    return result
+
+
+
+
+    
+
+
+
